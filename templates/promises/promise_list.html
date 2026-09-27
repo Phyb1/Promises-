@@ -1,0 +1,8 @@
+{% for promise in promises %}
+  <article>
+    <a href="{% url 'promises:detail' promise.pk %}">{{ promise.verse_ref }}</a>
+    <p>{{ promise.verse_text }}</p>
+  </article>
+{% empty %}
+  <p>No promises found.</p>
+{% endfor %}

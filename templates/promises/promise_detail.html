@@ -1,0 +1,8 @@
+<article>
+  <h1>{{ promise.verse_ref }}</h1>
+  <p>{{ promise.verse_text }}</p>
+  <p>{{ promise.version }}</p>
+  <ul>
+    {% for tag in promise.tags.all %}<li>{{ tag.name }}</li>{% endfor %}
+  </ul>
+</article>
